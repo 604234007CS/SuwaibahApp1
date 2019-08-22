@@ -8,6 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { FlashlightPage } from '../pages/flashlight/flashlight';
+import { JsonMenuPage } from '../pages/json-menu/json-menu';
 
 
 @Component({
@@ -30,6 +31,7 @@ export class MyApp {
       { title: 'Login', component: LoginPage, icon: 'key' },
       { title: 'BarcodeScanner', component: BarcodeScannerPage, icon: 'barcode' },
       { title: 'Flashlight', component: FlashlightPage, icon: 'flash' },
+      { title: 'JsonMenu', component: JsonMenuPage, icon: 'book' },
     ];
 
   }
