@@ -1,3 +1,4 @@
+import {HttpClientModule} from '@angular/common/http/';
 import { FlashlightPage } from './../pages/flashlight/flashlight';
 import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 
@@ -26,6 +27,7 @@ import { JsonMenuPage } from '../pages/json-menu/json-menu';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
