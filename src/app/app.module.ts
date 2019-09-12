@@ -17,13 +17,14 @@ import { SMS } from '@ionic-native/sms/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Flashlight } from '@ionic-native/flashlight';
 import { JsonMenuPage } from '../pages/json-menu/json-menu';
+import { MovieAppPage } from '../pages/movie-app/movie-app';
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,BarcodeScannerPage,
-    ListPage,LoginPage,FlashlightPage,JsonMenuPage
+    ListPage,LoginPage,FlashlightPage,JsonMenuPage,MovieAppPage
   ],
   imports: [
     BrowserModule,
@@ -34,11 +35,11 @@ import { JsonMenuPage } from '../pages/json-menu/json-menu';
   entryComponents: [
     MyApp,
     HomePage,BarcodeScannerPage,
-    ListPage,LoginPage,FlashlightPage,JsonMenuPage
+    ListPage,LoginPage,FlashlightPage,JsonMenuPage,MovieAppPage
   ],
   providers: [
     StatusBar,
-    SplashScreen,SMS,BarcodeScanner,Flashlight,JsonMenuPage,
+    SplashScreen,SMS,BarcodeScanner,Flashlight,JsonMenuPage,MovieAppPage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

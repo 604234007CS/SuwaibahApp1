@@ -1,3 +1,4 @@
+import { MovieAppPage } from './../pages/movie-app/movie-app';
 import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 import { LoginPage } from './../pages/login/login';
 import { Component, ViewChild } from '@angular/core';
@@ -32,6 +33,8 @@ export class MyApp {
       { title: 'BarcodeScanner', component: BarcodeScannerPage, icon: 'barcode' },
       { title: 'Flashlight', component: FlashlightPage, icon: 'flash' },
       { title: 'JsonMenu', component: JsonMenuPage, icon: 'book' },
+      { title: 'MovieApp', component: MovieAppPage, icon: 'logo-youtube' },
+
     ];
 
   }
