@@ -10,44 +10,56 @@
       <ion-icon name="menu"></ion-icon>
     </button>
 
-    <ion-title text-center>MovieApp<button ion-button color="light" contact>
-        <ion-icon name="contact"></ion-icon>
-      </button>
-    </ion-title>
+    <ion-title text-center>MovieApp </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+      <ion-icon let right name="contact"></ion-icon>
+    </button>
+    </ion-buttons>  
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<ion-card color = "dark">
-  <ion-card-header>
-    All about movie
-  </ion-card-header>
-  <ion-card-content>
+  <ion-card color="light">
+    <ion-card-header>
+      All about movie
+    </ion-card-header>
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+
+  
+    <ion-item (click)="NowPlaying()">
+      <ion-thumbnail item-left><img src="assets/imgs/Now.jpg"></ion-thumbnail>
+      <h2>Now</h2>
+      <p>Now Playing</p>
+      <ion-icon item-right name="arrow-dropright-circle"></ion-icon>
+    </ion-item>
+
+    <ion-item (click) = "UpComing()">
+      <ion-thumbnail item-left><img src="assets/imgs/Upcomming.png"></ion-thumbnail>
+      <h2>Upcoming</h2>
+      <p>Upcoming</p>
+      <ion-icon item-right name="arrow-dropright-circle"></ion-icon>
+    </ion-item>
     
-  </ion-card-content>
-</ion-card>
+    <ion-item (click) = "Popular()">
+      <ion-thumbnail item-left><img src="assets/imgs/Popula.png"></ion-thumbnail>
+      <h2>Upcoming</h2>
+      <p>Upcoming</p>
+      <ion-icon item-right name="arrow-dropright-circle"></ion-icon>
+    </ion-item>
+   
+    <ion-item (click) = "TopRated()">
+      <ion-thumbnail item-left><img src="assets/imgs/Top.png"></ion-thumbnail>
+      <h2>Upcoming</h2>
+      <p>Upcoming</p>
+      <ion-icon item-right name="arrow-dropright-circle"></ion-icon>
+    </ion-item>
 
-
-  <ion-card>
-      <ion-list>
-        <ion-item (click) ="goTonow()">
-          <ion-thumbnail item-left><img src="assets/imgs/Now.png"></ion-thumbnail>
-          <h2>Now</h2>
-          <p>Now Playing</p>
-        </ion-item>
-      </ion-list>
-  </ion-card>
-
-  <ion-card>
-    <ion-list>
-      <ion-item>
-        <ion-thumbnail item-left><img src="assets/imgs/Now.png"></ion-thumbnail>
-        <h2>Upcoming</h2>
-        <p>Upcoming</p>
-      </ion-item>
-    </ion-list>
-
-  </ion-card>
+  
 
 
 

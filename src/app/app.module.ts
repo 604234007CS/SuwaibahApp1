@@ -18,6 +18,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Flashlight } from '@ionic-native/flashlight';
 import { JsonMenuPage } from '../pages/json-menu/json-menu';
 import { MovieAppPage } from '../pages/movie-app/movie-app';
+import { MovieProvider } from '../providers/movie/movie';
 
 
 @NgModule({
@@ -40,7 +41,11 @@ import { MovieAppPage } from '../pages/movie-app/movie-app';
   providers: [
     StatusBar,
     SplashScreen,SMS,BarcodeScanner,Flashlight,JsonMenuPage,MovieAppPage,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MovieProvider,
+    MovieProvider,
+    MovieProvider,
+    MovieProvider
   ]
 })
 export class AppModule {}
