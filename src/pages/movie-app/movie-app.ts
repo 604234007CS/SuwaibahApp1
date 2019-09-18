@@ -21,7 +21,7 @@ export class MovieAppPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MovieAppPage');
+    console.log("ionViewDidLoad MovieAppPage");
   }
 
   NowPlaying(){

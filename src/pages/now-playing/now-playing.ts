@@ -19,6 +19,7 @@ export class NowPlayingPage {
 
   movieArray : any = [];
   imgPath = 'https://image.tmdb.org/t/p/original/';
+  queryText : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public nowmovie :  MovieProvider) {
     this.loadNowdata();
@@ -35,7 +36,7 @@ export class NowPlayingPage {
 
   loadNowdata(){
     this.nowmovie.getNowPlaying().subscribe(nowmovie =>{
-      this.movieArray=nowmovie['results'];
+      this.movieArray=nowmovie["results"];
     });
   }
 
@@ -43,7 +44,8 @@ export class NowPlayingPage {
     this.navCtrl.push("MovieDetialPage",nowmovie);
   }
 
+  
+  }
  
    
 
-}

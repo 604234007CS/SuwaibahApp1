@@ -17,6 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class UpComingPage {
   movieArray : any = [];
   imgPath = 'https://image.tmdb.org/t/p/original/';
+  queryText : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public nowmovie : MovieProvider) {
     this.loadNowdata();
