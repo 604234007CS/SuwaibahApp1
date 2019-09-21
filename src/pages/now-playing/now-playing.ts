@@ -1,7 +1,7 @@
-import { MovieDetialPage } from './../movie-detial/movie-detial';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MovieProvider } from '../../providers/movie/movie';
+import { MovieAppPage } from '../movie-app/movie-app';
 
 /**
  * Generated class for the NowPlayingPage page.
@@ -30,10 +30,6 @@ export class NowPlayingPage {
   }
 
 
-  MovieApp(){      //ปุ่มhome
-    this.navCtrl.push("MovieAppPage");
-  }
-
   loadNowdata(){
     this.nowmovie.getNowPlaying().subscribe(nowmovie =>{
       this.movieArray=nowmovie["results"];
@@ -43,6 +39,14 @@ export class NowPlayingPage {
   Moviedetail(nowmovie){
     this.navCtrl.push("MovieDetialPage",nowmovie);
   }
+
+  Movieapp(){  //ปุ่มhome
+    this.navCtrl.push(MovieAppPage);
+  }
+
+
+
+
 
   
   }
